@@ -1,4 +1,8 @@
-<b>Create IRIs</b>
-<br>
+Create IRIs
+- my identifier I on the Web or Internet:     [[name: Prename Name]] has his own website [[foaf:homepage::http//example.ch]]
+
+- a list of worked at:                        http://example.ch/work/coop_01_2010
+                                              http://example.ch/work/
+
 
 
