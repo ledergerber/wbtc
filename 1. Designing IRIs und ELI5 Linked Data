@@ -1,8 +1,11 @@
 Create IRIs
-- my identifier I on the Web or Internet:     [[name: Prename Name]] has his own website [[foaf:homepage::http//example.ch]]
+I designed some IRIs for my own profile in the web. (Notice, these are fakes)
 
-- a list of worked at:                        http://example.ch/work/coop_01_2010
-                                              http://example.ch/work/
+my identifier:                                http://chrigu.info/#i                         for informations about me
+                                                                                            better declaration than “about” or “me”
+
+
+
 
 
 
