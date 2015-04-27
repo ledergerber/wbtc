@@ -1,0 +1,11 @@
+This ELI5 (Explain Like I’m Five) is based on this video from youtube: What is Linked Data?
+
+Every thing in the world is linked to each other. Let’s make a example:
+I have a brother (Joe), father (Pete), and mother (Eve). They are linked to 
+me with a specific description as brother, father, and mother. An other connection is my girlfriend, 
+she is also linked to me. These links go on and on. This structure allows us to find information; 
+for example you are a friend of mine and for this reason we are linked. Otherwise you don’t have 
+any links to my family. You need to know my brothers name. Due to the fact that you know, that I am 
+linked with him (he is my brother), you are able to ask me for his name. It’s like a long connection 
+of objects which bring you to the solution.
+Whether we apply this pattern to the world wide web, we talk about Linked Data. It’s absolutly the same principe.
