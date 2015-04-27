@@ -1,1 +1,25 @@
+I created triples with the serialization “turtles” from my previous post about IRIs:
 
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://example.org/foaf/0.1/> .
+@prefix friends : <http://example.org/friends/1.0/> .
+@prefix wikipedia : <http://de.wikipedia.org/wiki/> .
+@prefix education : <http://xmlns/education/1.0/> .
+@prefix work : <http://xmlns/work/1.0/> .
+
+<http://chrigu.info/#i>
+rdf:type foaf:Person ;
+foaf:Name “Chrigu”@de ;
+foaf:account <http://twitter.com/laedregas> , <http://facebook.com/mrpresident> ;
+foaf:friends <“Joe” , “Tim” , “Pete”@de> ;
+foaf:interest wikipedia:floorball , wikipedia:apple , wikipedia:sport ;
+foaf:mbox <mailto:info@chrigu.info> ;
+foaf:education <“bfh” , “unibe” , “high-school”> ;
+foaf:work <“sbb” , “post” , “phbern”> .
+
+
+Here you can finde some examples with the serialization “n-triples”:
+
+<http://chrigu.info/#i> <http://dbpedia.org/property/hometown> “Bern” .
+<http://chrigu.info/#i> <http://example.org/friends/1.0/> “Joe” .
+<http://chrigu.info/work/#sbb> <http://example.org/friends/1.0/> <http://sbb.ch> .
