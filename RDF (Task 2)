@@ -10,7 +10,7 @@
 <http://chrigu.info/#i>
 rdf:type foaf:Person ;
 foaf:Name “Chrigu”@de ;
-foaf:account <http://twitter.com/laedregas> , <http://facebook.com/mrpresident> ;
+foaf:account <http://twitter.com/laedregas> , <http://facebook.com/mrpresident>, <http://github.com/mrpredisent> ;
 foaf:friends “Joe”@de ;
 foaf:friends “Tobi”@de ;
 foaf:friends “Peter”@de ;
