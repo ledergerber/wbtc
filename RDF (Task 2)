@@ -3,7 +3,7 @@
 @prefix rdf : <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix foaf : <http://example.org/foaf/0.1/> .
 @prefix friends : <http://xmlns.com/foaf/0.1/knows> .
-@prefix wikipedia : <http://de.wikipedia.org/wiki/> .
+@prefix wikipedia : <http://en.wikipedia.org/wiki/> .
 @prefix education : <http://xmlns/education/1.0/> .
 @prefix work : <http://xmlns/work/1.0/> .
 
@@ -12,7 +12,7 @@ rdf:type foaf:Person ;
 foaf:Name “Chrigu”@de ;
 foaf:account <http://twitter.com/laedregas> , <http://facebook.com/mrpresident> ;
 foaf:friends <“Joe” , “Tim” , “Pete”@de> ;
-foaf:interest wikipedia:floorball , wikipedia:apple , wikipedia:sport ;
+foaf:interest wikipedia:Floorball , wikipedia:Apple , wikipedia:Sport ;
 foaf:mbox <mailto:info@chrigu.info> ;
 foaf:education <“bfh” , “unibe” , “high-school”> ;
 foaf:work <“sbb” , “post” , “phbern”> .
