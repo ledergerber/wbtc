@@ -4,20 +4,20 @@ I designed some IRIs for my own profile in the web. (Notice, these are fakes)
 my identifier:                                http://chrigu.info/#i                         for informations about me
                                                                                             better declaration than “about” or “me”
 
-list of work experience:                      http://chrigu.info/work/#sbb
-                                              http://chrigu.info/work/#post
-                                              http://chrigu.info/work/#phbern               all my experience are under the pattern “work”
+list of work experience:                      http://chrigu.info/work#sbb
+                                              http://chrigu.info/work#post
+                                              http://chrigu.info/work#phbern               all my experience are under the pattern “work”
                                                                                             for every company, I worked for, is a new pattern
                                                                                             If I worked twice for the same company, there will be two entries
 
-list of education:                           http://chrigu.info/education/#bfh
-                                             http://chrigu.info/education/#unibe
-                                             http://chrigu.info/education/#high-school
+list of education:                           http://chrigu.info/education#bfh
+                                             http://chrigu.info/education#unibe
+                                             http://chrigu.info/education#high-school
 
-some of my interests:                        http://chrigu.info/interests/#it
-                                             http://chrigu.info/interests/#sports
-                                             http://chrigu.info/interests/#floorball
-                                             http://chrigu.info/interests/#macrumors
+some of my interests:                        http://chrigu.info/interests#it
+                                             http://chrigu.info/interests#sports
+                                             http://chrigu.info/interests#floorball
+                                             http://chrigu.info/interests#macrumors
                                           
 
 I think that these IRIs will work also in the future. I am able to supplement all categories without restriction.
