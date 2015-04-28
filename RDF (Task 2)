@@ -1,4 +1,4 @@
-I created triples with the serialization “turtles” from my previous post about IRIs:
+#I created triples with the serialization “turtles” from my previous post about IRIs:
 
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix foaf: <http://example.org/foaf/0.1/> .
@@ -18,7 +18,7 @@ foaf:education <“bfh” , “unibe” , “high-school”> ;
 foaf:work <“sbb” , “post” , “phbern”> .
 
 
-Here you can finde some examples with the serialization “n-triples”:
+#Here you can finde some examples with the serialization “n-triples”:
 
 <http://chrigu.info/#i> <http://dbpedia.org/property/hometown> “Bern” .
 <http://chrigu.info/#i> <http://example.org/friends/1.0/> “Joe” .
