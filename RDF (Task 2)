@@ -11,7 +11,9 @@
 rdf:type foaf:Person ;
 foaf:Name “Chrigu”@de ;
 foaf:account <http://twitter.com/laedregas> , <http://facebook.com/mrpresident> ;
-foaf:friends <“Joe” , “Tim” , “Pete”@de> ;
+foaf:friends “Joe”@de ;
+foaf:friends “Tobi”@de ;
+foaf:friends “Peter”@de ;
 foaf:interest wikipedia:Floorball , wikipedia:Apple , wikipedia:Sport ;
 foaf:mbox <mailto:info@chrigu.info> ;
 foaf:education <“bfh” , “unibe” , “high-school”> ;
