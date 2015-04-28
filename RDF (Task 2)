@@ -31,3 +31,4 @@ foaf:work “phbern” .
 <http://chrigu.info/#i> <http://dbpedia.org/property/hometown> “Bern” .
 <http://chrigu.info/#i> <http://xmlns.com/foaf/0.1/knows> “Joe” .
 <http://chrigu.info/work/#sbb> <http://xmlns/work/1.0/> <http://sbb.ch> .
+
