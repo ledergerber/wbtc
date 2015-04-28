@@ -5,8 +5,8 @@
 @prefix friends : <http://xmlns.com/foaf/0.1/knows> .
 @prefix wikipedia : <http://en.wikipedia.org/wiki/> .
 @prefix education : <http://xmlns/education/1.0/> .
-@prefix work : <http://xmlns/work/1.0/> .
-@prefix interest : <http://xmlns.com/foaf/0.1/interest>
+@prefix work : <http://xmlns/foaf/0.1/work> .
+
 
 <http://chrigu.info/#i>
 rdf:type foaf:Person ;
