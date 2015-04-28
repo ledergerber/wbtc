@@ -32,3 +32,6 @@ foaf:work “phbern” .
 <http://chrigu.info/#i> <http://xmlns.com/foaf/0.1/knows> “Joe” .
 <http://chrigu.info/work/#sbb> <http://xmlns/work/1.0/> <http://sbb.ch> .
 
+#Validation
+#I check this RDF Turtle with the following validation tool: http://www.w3.org/2012/pyRdfa/extract
+#"Congratulations, your RDFa source is valid; however there is one informational message in your RDFa content that you might want to check"
