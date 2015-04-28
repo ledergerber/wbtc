@@ -16,9 +16,13 @@ foaf:friends “Tobi”@de ;
 foaf:friends “Peter”@de ;
 foaf:interest wikipedia:Floorball , wikipedia:Apple , wikipedia:Sport ;
 foaf:mbox <mailto:info@chrigu.info> ;
-foaf:education “bfh” , “unibe” , “high-school”> ;
+foaf:education “bfh” ;
+foaf:education “unibe” ;
+foaf:education “high-school” ;
 
-foaf:work <“sbb” , “post” , “phbern”> .
+foaf:work “sbb” ;
+foaf:work “phbern” ;
+foaf:work “phbern” .
 
 
 # Here you can finde some examples with the serialization “n-triples”:
