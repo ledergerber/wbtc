@@ -2,7 +2,7 @@ I created triples with the serialization “turtles” from my previous post abo
 
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix foaf: <http://example.org/foaf/0.1/> .
-@prefix friends : <http://example.org/friends/1.0/> .
+@prefix friends : <http://xmlns.com/foaf/0.1/knows> .
 @prefix wikipedia : <http://de.wikipedia.org/wiki/> .
 @prefix education : <http://xmlns/education/1.0/> .
 @prefix work : <http://xmlns/work/1.0/> .
