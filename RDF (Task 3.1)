@@ -2,4 +2,5 @@
 
 BASE <http://ledergerber91.ch>
 PREFIX foaf: <http://xmlns.com/foaf/0.1/>
-
+PREFIX wikipedia : <http://en.wikipedia.org/wiki/> 
+PREFIX friends : <http://xmlns.com/foaf/0.1/knows> 
