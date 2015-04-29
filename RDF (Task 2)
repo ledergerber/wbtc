@@ -15,7 +15,7 @@ foaf:account <http://twitter.com/laedregas> , <http://facebook.com/mrpresident>,
 foaf:friends “Joe”@de ;
 foaf:friends “Tobi”@de ;
 foaf:friends “Peter”@de ;
-foaf:interest wikipedia:Floorball , wikipedia:Apple_Inc , wikipedia:Sport ;
+foaf:interest wikipedia:Floorball , wikipedia:Apple_Inc. , wikipedia:Sport ;
 foaf:mbox <mailto:info@chrigu.info> ;
 foaf:education “bfh” ;
 foaf:education “unibe” ;
