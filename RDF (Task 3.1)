@@ -1,6 +1,10 @@
 #RDF Document for my own Profile
 
-BASE <http://ledergerber91.ch>
+BASE <http://ledergerber91.ch/>
 PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 PREFIX wikipedia : <http://en.wikipedia.org/wiki/> 
 PREFIX friends : <http://xmlns.com/foaf/0.1/knows> 
+
+<about#me>
+    rdf:type foaf:Person ;
+    foaf:Name “Chrigu Ledergerber”@de ;
