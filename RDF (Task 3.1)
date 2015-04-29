@@ -4,11 +4,14 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/>
-@prefix wikipedia : <http://en.wikipedia.org/wiki/> 
+@prefix wikipedia : <http://en.wikipedia.org/wiki/>
+@prefix dbpedia : <http://dbpedia.org/page/>
 @prefix friends : <http://xmlns.com/foaf/0.1/knows> 
 
 <about#me>
     rdf:type foaf:Person ;
-    foaf:Name “Chrigu Ledergerber”@de ;
+    foaf:name “Chrigu Ledergerber”@de ;
     foaf:knows <tobi#me> ;
     foaf:knows <nadine#me> ;
+
+    foaf:mbox <mailto:christianmichael.ledergerber@students.bfh.ch> ;
