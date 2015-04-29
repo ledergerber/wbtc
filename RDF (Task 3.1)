@@ -17,4 +17,5 @@
     foaf:mbox <mailto:christianmichael.ledergerber@students.bfh.ch> ;
     
     foaf:interest wikipedia:Floorball, wikipedia:Apple_Inc ;
-    foaf:interest dbpedia:Bern, dbpedia:Switzerland , dbpedia:
+    foaf:interest dbpedia:Bern, dbpedia:Switzerland , dbpedia:Sport ;
+
