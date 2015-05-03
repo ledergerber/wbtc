@@ -2,28 +2,28 @@
 
 @prefix rdf : <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
 @prefix foaf : <http://xlmns.com/foaf/0.1/> 
-@prefix friends : <http://xmlns.com/foaf/0.1/knows> 
+@prefix knows : <http://xmlns.com/foaf/0.1/knows/> 
 @prefix wikipedia : <http://en.wikipedia.org/wiki/> 
-@prefix education : <http://xmlns/education/1.0/> 
-@prefix work : <http://xmlns/foaf/0.1/work> 
+@prefix education : <http://xmlns.com/foaf/0.1/schoolHomepage/> 
+@prefix work : <http://xmlns.com/foaf/0.1/workplaceHomepage/> 
 
 
 <http://chrigu.info/#i>
 rdf:type foaf:Person ;
-foaf:Name “Chrigu”@de ;
+foaf:firstName “Chrigu”@de ;
 foaf:account <http://twitter.com/laedregas> , <http://facebook.com/mrpresident>, <http://github.com/mrpredisent> ;
-foaf:friends “Joe”@de ;
-foaf:friends “Tobi”@de ;
-foaf:friends “Peter”@de ;
+foaf:knows “Joe” ;
+foaf:knows “Tobi” ;
+foaf:knows “Peter” ;
 foaf:interest wikipedia:Floorball , wikipedia:Apple_Inc. , wikipedia:Sport ;
 foaf:mbox <mailto:info@chrigu.info> ;
-foaf:education “bfh” ;
-foaf:education “unibe” ;
-foaf:education “high-school” ;
+foaf:education <www.bfh.ch> ;
+foaf:education <www.unibe.ch> ;
+foaf:education <www.gymhofwil.ch> ;
 
-foaf:work “sbb” ;
-foaf:work “phbern” ;
-foaf:work “phbern” .
+foaf:work <www.sbb.ch> ;
+foaf:work <www.phbern.ch> ;
+foaf:work <www.post.ch> .
 
 
 # Here you can finde some examples with the serialization “n-triples”:
