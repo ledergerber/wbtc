@@ -32,7 +32,7 @@ foaf:workplaceHomepage <http://post.ch> .
 # Here you can finde some examples with the serialization “n-triples”:
 
 <http://chrigu.info/#i> <http://dbpedia.org/property/hometown> <http://dbpedia.org/page/Bern> .
-<http://chrigu.info/#i> <http://xmlns.com/foaf/0.1/knows> <http://tobiir.ch> .
+<http://chrigu.info/#i> <http://example.org/knows/0.1/> <http://tobiir.ch> .
 <http://chrigu.info/work/#sbb> <http://xmlns/foaf/0.1/workplaceHomepage> <http://sbb.ch> .
 
 #Validation
