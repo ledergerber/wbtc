@@ -1,36 +1,38 @@
 # I created triples with the serialization “turtles” from my previous post about IRIs:
 
 @prefix rdf : <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
-@prefix foaf : <http://xlmns.com/foaf/0.1/> 
-@prefix knows : <http://xmlns.com/foaf/0.1/knows/> 
+@prefix foaf : <http://xlmns.com/foaf/0.1/>
 @prefix wikipedia : <http://en.wikipedia.org/wiki/> 
-@prefix education : <http://xmlns.com/foaf/0.1/schoolHomepage/> 
-@prefix work : <http://xmlns.com/foaf/0.1/workplaceHomepage/> 
+@prefix education: <http://example.org/education/0.1/>
+@prefix work: <http://example.org/work/0.1/>
 
 
 <http://chrigu.info/#i>
 rdf:type foaf:Person ;
 foaf:firstName “Chrigu”@de ;
 foaf:account <http://twitter.com/laedregas> , <http://facebook.com/mrpresident>, <http://github.com/mrpredisent> ;
-foaf:knows “Joe” ;
-foaf:knows “Tobi” ;
-foaf:knows “Peter” ;
+foaf:knows <http://tobiir.ch> ;
+foaf:knows <http://ledergerber91.ch> ;
 foaf:interest wikipedia:Floorball , wikipedia:Apple_Inc. , wikipedia:Sport ;
 foaf:mbox <mailto:info@chrigu.info> ;
-foaf:education <www.bfh.ch> ;
-foaf:education <www.unibe.ch> ;
-foaf:education <www.gymhofwil.ch> ;
+foaf:schoolHomepage <http://bfh.ch> ;
+foaf:schoolHomepage <http://unibe.ch> ;
+foaf:schoolHomepage <http://gymhofwil.ch> ;
+education:primarySchool <http://www.schule-schliern.ch> ;
+education:secondSchool <http://ozk.ch> ;
+work:experience <http://sbb.ch> ;
+work:experience <http://phbern.ch> ;
 
-foaf:work <www.sbb.ch> ;
-foaf:work <www.phbern.ch> ;
-foaf:work <www.post.ch> .
+foaf:workplaceHomepage <http://sbb.ch> ;
+foaf:workplaceHomepage <http://phbern.ch> ;
+foaf:workplaceHomepage <http://post.ch> .
 
 
 # Here you can finde some examples with the serialization “n-triples”:
 
-<http://chrigu.info/#i> <http://dbpedia.org/property/hometown> “Bern” .
-<http://chrigu.info/#i> <http://xmlns.com/foaf/0.1/knows> “Joe” .
-<http://chrigu.info/work/#sbb> <http://xmlns/work/1.0/> <http://sbb.ch> .
+<http://chrigu.info/#i> <http://dbpedia.org/property/hometown> <http://dbpedia.org/page/Bern> .
+<http://chrigu.info/#i> <http://xmlns.com/foaf/0.1/knows> <http://tobiir.ch> .
+<http://chrigu.info/work/#sbb> <http://xmlns/foaf/0.1/workplaceHomepage> <http://sbb.ch> .
 
 #Validation
 #I check this RDF Turtle with the following validation tool: http://www.w3.org/2012/pyRdfa/extract
