@@ -13,7 +13,7 @@ rdf:type foaf:Person ;
 foaf:firstName “Chrigu”@de ;
 foaf:account <http://twitter.com/laedregas> , <http://facebook.com/mrpresident>, <http://github.com/mrpredisent> ;
 knows:friend <http://tobiir.ch/#1> ;
-knows:friend <http://ledergerber91.ch> ;
+knows:friend <http://ledergerber91.ch/#1> ;
 foaf:interest wikipedia:Floorball , wikipedia:Apple_Inc. , wikipedia:Sport ;
 foaf:mbox <mailto:info@chrigu.info> ;
 foaf:schoolHomepage <http://bfh.ch> ;
