@@ -1,6 +1,6 @@
 #RDF Document for my own Profile
 
-@base <http://ledergerber.info/> 
+@base <http://ledergerber91.info/> 
 @prefix rdf : <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
 @prefix foaf : <http://xlmns.com/foaf/0.1/>
 @prefix wikipedia : <http://en.wikipedia.org/wiki/> 
