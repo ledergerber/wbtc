@@ -1,21 +1,20 @@
 #RDF Document for my own Profile
 
-@base <http://ledergerber91.ch/>
 @prefix rdf : <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
 @prefix foaf : <http://xlmns.com/foaf/0.1/>
 @prefix wikipedia : <http://en.wikipedia.org/wiki/> 
+@prefix dbpedia : <http://dbpedia.org/page/>
 @prefix knows: <http://example.org/knows/0.1/>
 @prefix education: <http://example.org/education/0.1/>
 @prefix work: <http://example.org/work/0.1/>
 
-<about#me>
+<http://ledergerber91.info/#1>
     rdf:type 
     a foaf:Person ;
     foaf:firstName “Chrigu”@de ;
     foaf:lastName “Ledergerber”@de ;
-    foaf:knows <tobi#1> ;
-    foaf:knows <http://nadine#1> ;
-
+    foaf:gender "male";
+    
     foaf:mbox <mailto:christianmichael.ledergerber@students.bfh.ch> ;
     
     foaf:interest wikipedia:Floorball, wikipedia:Apple_Inc. ;
