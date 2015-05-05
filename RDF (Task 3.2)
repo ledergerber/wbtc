@@ -15,7 +15,6 @@
 
 
 #Get the population census value for Switzerland using the DBpedia SPARQL Endpoint.
-PREFIX dbo: <http://dbpedia.org/ontology/>
 PREFIX dbr: <http://dbpedia.org/resource/>
 
 SELECT ?PopulationCensusValueForSwitzerland
