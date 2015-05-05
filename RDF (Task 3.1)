@@ -1,5 +1,6 @@
 #RDF Document for my own Profile
 
+@base <http://ledergerber.info/> 
 @prefix rdf : <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
 @prefix foaf : <http://xlmns.com/foaf/0.1/>
 @prefix wikipedia : <http://en.wikipedia.org/wiki/> 
@@ -9,11 +10,11 @@
 @prefix work: <http://example.org/work/0.1/>
 
 <http://ledergerber91.info/#1>
-    rdf:type 
-    a foaf:Person ;
+    rdf:type foaf:Person ;
     foaf:firstName “Chrigu”@de ;
     foaf:lastName “Ledergerber”@de ;
-    foaf:gender "male";
+    foaf:gender "male" ;
+    foaf: bri
     foaf:knows <http://csarven.ca/#1> a foaf:person ;
     foaf:mbox <mailto:christianmichael.ledergerber@students.bfh.ch> ;
     
