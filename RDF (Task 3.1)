@@ -9,7 +9,8 @@
 @prefix friends : <http://xmlns.com/foaf/0.1/knows> 
 
 <about#me>
-    rdf:type foaf:Person ;
+    rdf:type 
+    a foaf:Person ;
     foaf:name “Chrigu Ledergerber”@de ;
     foaf:knows <tobi#me> ;
     foaf:knows <nadine#me> ;
