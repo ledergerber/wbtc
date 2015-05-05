@@ -13,7 +13,7 @@
     foaf:firstName “Chrigu”@de ;
     foaf:lastName “Ledergerber”@de ;
     foaf:gender "male" ;
-    schema:birthDate "1991-11-14" ;
+    schema:birthDate "1991-05-11" ;
     foaf:knows <http://csarven.ca/#1> a foaf:person ;
     foaf:mbox <mailto:christianmichael.ledergerber@students.bfh.ch> ;
     
