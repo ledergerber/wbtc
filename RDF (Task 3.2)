@@ -4,13 +4,34 @@
 
 
 #Get the Central government debt, total (% of GDP) value for Switzerland for the year 2008 using the World Bank SPARQL Endpoint.
-SELECT ?CGDofGDP
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX sdmx-dimension: <http://purl.org/linked-data/sdmx/2009/dimension#>
+PREFIX sdmx-measure: <http://purl.org/linked-data/sdmx/2009/measure#>
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX year: <http://reference.data.gov.uk/id/year/>
+PREFIX property: <http://worldbank.270a.info/property/>
+PREFIX indicator: <http://worldbank.270a.info/classification/indicator/>
+PREFIX country: <http://worldbank.270a.info/classification/country/>
+PREFIX g-meta: <http://worldbank.270a.info/graph/meta>
+PREFIX g-indicators: <http://worldbank.270a.info/graph/world-development-indicators>
+SELECT ?countryPrefLabel ?refPeriod ?obsValue
 WHERE {
-?p ?a country:Switzerland.
-?p sdmx-measure:obsValue ? CGDofGDP.
-?p ?x year:2008.
-?p property:indicator indicator:GC.DOD.TOTL.GD.ZS.
-
+    GRAPH g-indicators: {
+        ?observation
+            a qb:Observation ;
+            property:indicator indicator:GC.DOD.TOTL.GD.ZS ;
+            sdmx-dimension:refArea ?countryURI ;
+            sdmx-dimension:refPeriod ?refPeriodURI ;
+            sdmx-measure:obsValue ?obsValue ;
+        .
+        BIND(SUBSTR(STR(?refPeriodURI), 38, 4) AS ?refPeriod)
+        FILTER (xsd:int(?refPeriod) = 2008)
+        FILTER (?countryURI = country:CH)
+    }
+    GRAPH g-meta: {
+        ?countryURI skos:prefLabel ?countryPrefLabel .
+    }
 }
 
 
