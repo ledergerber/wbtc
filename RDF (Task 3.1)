@@ -16,6 +16,7 @@
     schema:birthDate "1991-05-11" ;
     foaf:knows <http://csarven.ca/#1> a foaf:person ;
     foaf:mbox <mailto:christianmichael.ledergerber@students.bfh.ch> ;
+    foaf:account <http://twitter.com/laedregas> , <http://github.com/ledergerber> ;
     
     foaf:interest wikipedia:Floorball, wikipedia:Apple_Inc. ;
     foaf:interest dbpedia:Bern, dbpedia:Switzerland , dbpedia:Sport ;
