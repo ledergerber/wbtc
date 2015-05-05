@@ -5,6 +5,7 @@
 @prefix foaf : <http://xlmns.com/foaf/0.1/>
 @prefix wikipedia : <http://en.wikipedia.org/wiki/> 
 @prefix dbpedia : <http://dbpedia.org/page/>
+@prefix moodle : <http://moodle.bfh.ch/course/view.php?>
 
 <http://ledergerber91.info/#1>
     rdf:type foaf:Person ;
@@ -17,4 +18,6 @@
     
     foaf:interest wikipedia:Floorball, wikipedia:Apple_Inc. ;
     foaf:interest dbpedia:Bern, dbpedia:Switzerland , dbpedia:Sport ;
+    
+    foaf:currentProject moodle:id=7364 ;
 
