@@ -4,6 +4,32 @@
 
 
 #Get the Central government debt, total (% of GDP) value for Switzerland for the year 2008 using the World Bank SPARQL Endpoint.
+#I found some help in the web, which allows me to create this code. 
+#Without using a graph:
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX sdmx-dimension: <http://purl.org/linked-data/sdmx/2009/dimension#>
+PREFIX sdmx-measure: <http://purl.org/linked-data/sdmx/2009/measure#>
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX year: <http://reference.data.gov.uk/id/year/>
+PREFIX property: <http://worldbank.270a.info/property/>
+PREFIX indicator: <http://worldbank.270a.info/classification/indicator/>
+PREFIX country: <http://worldbank.270a.info/classification/country/>
+SELECT ?refPeriod ?obsValue
+WHERE {
+        ?observation a qb:Observation ;
+            property:indicator indicator:GC.DOD.TOTL.GD.ZS ;
+            sdmx-dimension:refArea ?countryURI ;
+            sdmx-measure:obsValue ?obsValue ;            
+            sdmx-dimension:refPeriod ?refPeriodURI ;
+        .
+      BIND(SUBSTR(STR(?refPeriodURI), 38, 4) AS ?refPeriod)
+      FILTER (?countryURI = country:CH)
+      FILTER (xsd:int(?refPeriod) = 2008)
+}
+
+
+#With a Graph:
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX sdmx-dimension: <http://purl.org/linked-data/sdmx/2009/dimension#>
