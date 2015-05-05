@@ -17,7 +17,7 @@
 #Get the population census value for Switzerland using the DBpedia SPARQL Endpoint.
 PREFIX dbr: <http://dbpedia.org/resource/>
 
-SELECT ?PopulationCensusValueForSwitzerland
+SELECT ?PopulationCensusValue
 WHERE {
-    dbr:Switzerland dbpprop:populationCensus ?PopulationCensusValueForSwitzerland.
+    dbr:Switzerland dbpprop:populationCensus ?PopulationCensusValue.
 }
