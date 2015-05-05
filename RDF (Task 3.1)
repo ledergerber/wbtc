@@ -14,7 +14,7 @@
     foaf:firstName “Chrigu”@de ;
     foaf:lastName “Ledergerber”@de ;
     foaf:gender "male";
-    
+    foaf:knows <http://csarven.ca/about> a foaf:person ;
     foaf:mbox <mailto:christianmichael.ledergerber@students.bfh.ch> ;
     
     foaf:interest wikipedia:Floorball, wikipedia:Apple_Inc. ;
