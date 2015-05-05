@@ -5,9 +5,6 @@
 @prefix foaf : <http://xlmns.com/foaf/0.1/>
 @prefix wikipedia : <http://en.wikipedia.org/wiki/> 
 @prefix dbpedia : <http://dbpedia.org/page/>
-@prefix knows: <http://example.org/knows/0.1/>
-@prefix education: <http://example.org/education/0.1/>
-@prefix work: <http://example.org/work/0.1/>
 
 <http://ledergerber91.info/#1>
     rdf:type foaf:Person ;
