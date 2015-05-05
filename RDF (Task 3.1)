@@ -11,7 +11,8 @@
 <about#me>
     rdf:type 
     a foaf:Person ;
-    foaf:name “Chrigu Ledergerber”@de ;
+    foaf:firstName “Chrigu”@de ;
+    foaf:lastName “Ledergerber”@de ;
     foaf:knows <tobi#me> ;
     foaf:knows <nadine#me> ;
 
