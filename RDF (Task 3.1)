@@ -6,6 +6,7 @@
 @prefix wikipedia : <http://en.wikipedia.org/wiki/> 
 @prefix dbpedia : <http://dbpedia.org/page/>
 @prefix moodle : <http://moodle.bfh.ch/course/view.php?>
+@prefix wbtc_bfh : <http://wbtc_bfh.ch/>
 
 <http://ledergerber91.info/#1>
     rdf:type foaf:Person ;
@@ -20,4 +21,4 @@
     foaf:interest dbpedia:Bern, dbpedia:Switzerland , dbpedia:Sport ;
     
     foaf:currentProject moodle:id=7364 ;
-
+    foaf:currentProject wbtc_bfh:2015/linked-data;
