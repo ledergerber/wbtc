@@ -13,8 +13,8 @@
     a foaf:Person ;
     foaf:firstName “Chrigu”@de ;
     foaf:lastName “Ledergerber”@de ;
-    foaf:knows <tobi#me> ;
-    foaf:knows <nadine#me> ;
+    foaf:knows <tobi#1> ;
+    foaf:knows <http://nadine#1> ;
 
     foaf:mbox <mailto:christianmichael.ledergerber@students.bfh.ch> ;
     
