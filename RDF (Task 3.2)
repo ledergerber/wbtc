@@ -1,1 +1,24 @@
+#Get the Central government debt, total (% of GDP) value for Switzerland for the year 2008 using the World Bank SPARQL Endpoint.
+#Get the population census value for Switzerland using the DBpedia SPARQL Endpoint.
+#Only return the two values in the final result (either using SELECT or CONSTRUCT).
 
+
+#Get the Central government debt, total (% of GDP) value for Switzerland for the year 2008 using the World Bank SPARQL Endpoint.
+
+
+
+
+
+
+
+
+
+
+#Get the population census value for Switzerland using the DBpedia SPARQL Endpoint.
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX dbr: <http://dbpedia.org/resource/>
+
+SELECT ?PopulationCensusValueForSwitzerland
+WHERE {
+    dbr:Switzerland dbpprop:populationCensus ?PopulationCensusValueForSwitzerland.
+}
