@@ -19,7 +19,7 @@
     foaf:account <http://twitter.com/laedregas> , <http://github.com/ledergerber> ;
     
     foaf:interest wikipedia:Floorball, wikipedia:Apple_Inc. ;
-    foaf:interest dbpedia:Bern, dbpedia:Switzerland , dbpedia:Sport ;
+    foaf:interest dbpedia:Bern , dbpedia:Switzerland , dbpedia:Sport ,dbpedia:Borussia_Dortmund ;
     
     foaf:currentProject moodle:id=7364 ;
     foaf:currentProject wbtc_bfh:2015/linked-data;
