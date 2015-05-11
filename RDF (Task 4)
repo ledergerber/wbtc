@@ -1,0 +1,7 @@
+#SPARQL: foundingDate of Switzerland
+PREFIX dbr: <http://dbpedia.org/resource/>
+SELECT ?foundingDateTown
+WHERE{
+dbr:Switzerland dbpedia-owl:foundingDate ?foundingDateTown .
+}
+
