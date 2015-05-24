@@ -10,23 +10,22 @@ dbr:Switzerland dbpedia-owl:foundingDate ?foundingDate .
 PREFIX dbo: <http://dbpedia.org/ontology/>
 PREFIX dbp: <http://dbpedia.org/property/>
 
-SELECT ?name ?gname ?Place ?bDate
+SELECT ?name ?gname ?birthplace ?bdate
 WHERE{
 ?SoccerPlayer a <http://dbpedia.org/ontology/SoccerPlayer> .
 ?SoccerPlayer foaf:name ?name .
 ?SoccerPlayer foaf:givenName ?gname .
-?SoccerPlayer dbp:placeOfBirth ?Place .
-?SoccerPlayer dbp:dateOfBirth ?bDate .
-FILTER(?bDate > "1990-01-01"^^xsd:date)
-FILTER(?bDate < "1992-01-01"^^xsd:date)
+?SoccerPlayer dbp:placeOfBirth ?birthplace .
+?SoccerPlayer dbp:dateOfBirth ?bdate .
+FILTER(?bdate > "1990-01-01"^^xsd:date)
+FILTER(?bdate < "1992-01-01"^^xsd:date)
 }
-Order by ?Place
+Order by ?birthplace
 Limit 10000
 
 #SPARQL: 
 PREFIX dbo: <http://dbpedia.org/ontology/>
 PREFIX dbp: <http://dbpedia.org/property/>
-
 
 SELECT ?name ?code ?area ?mParty
 WHERE{
@@ -35,8 +34,6 @@ WHERE{
 ?Municipalities_of_Switzerland dbp:isoCodeRegion ?code .
 ?Municipalities_of_Switzerland dbp:area ?area .
 ?Municipalities_of_Switzerland dbp:mayorParty ?mParty .
-
 }
-
 Order by ?mParty
 Limit 10000
