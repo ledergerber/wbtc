@@ -28,11 +28,15 @@ PREFIX dbo: <http://dbpedia.org/ontology/>
 PREFIX dbp: <http://dbpedia.org/property/>
 
 
-SELECT ?name ?code
+SELECT ?name ?code ?area ?mParty
 WHERE{
 ?Municipalities_of_Switzerland a <http://dbpedia.org/ontology/Settlement> .
 ?Municipalities_of_Switzerland foaf:name ?name .
 ?Municipalities_of_Switzerland dbp:isoCodeRegion ?code .
+?Municipalities_of_Switzerland dbp:area ?area .
+?Municipalities_of_Switzerland dbp:mayorParty ?mParty .
+
 }
-Order by ?name
+
+Order by ?mParty
 Limit 10000
