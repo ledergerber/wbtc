@@ -7,3 +7,20 @@ dbr:Switzerland dbpedia-owl:foundingDate ?foundingDate .
 
 
 #SPARQL: 
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX dbp: <http://dbpedia.org/property/>
+
+SELECT ?name ?gname ?Place ?bDate
+WHERE{
+?SoccerPlayer a <http://dbpedia.org/ontology/SoccerPlayer> .
+?SoccerPlayer foaf:name ?name .
+?SoccerPlayer foaf:givenName ?gname .
+?SoccerPlayer dbp:placeOfBirth ?Place .
+?SoccerPlayer dbp:dateOfBirth ?bDate .
+FILTER(?bDate > "1990-01-01"^^xsd:date)
+FILTER(?bDate < "1992-01-01"^^xsd:date)
+}
+Order by ?Place
+Limit 10000
+
+#SPARQL: 
