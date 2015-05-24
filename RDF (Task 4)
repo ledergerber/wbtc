@@ -24,3 +24,15 @@ Order by ?Place
 Limit 10000
 
 #SPARQL: 
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX dbp: <http://dbpedia.org/property/>
+
+
+SELECT ?name ?code
+WHERE{
+?Municipalities_of_Switzerland a <http://dbpedia.org/ontology/Settlement> .
+?Municipalities_of_Switzerland foaf:name ?name .
+?Municipalities_of_Switzerland dbp:isoCodeRegion ?code .
+}
+Order by ?name
+Limit 10000
