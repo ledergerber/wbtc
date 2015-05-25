@@ -1,4 +1,4 @@
-#SPARQL: foundingDate of Switzerland
+#SPARQL: I am looking for the foundingDate of Switzerland.
 PREFIX dbr: <http://dbpedia.org/resource/>
 SELECT ?foundingDate
 WHERE{
@@ -6,7 +6,7 @@ dbr:Switzerland dbpedia-owl:foundingDate ?foundingDate .
 }
 
 
-#SPARQL: 
+#SPARQL: I am looking for the birthplace of soccer players which were born between 1990 and 1992.
 PREFIX dbo: <http://dbpedia.org/ontology/>
 PREFIX dbp: <http://dbpedia.org/property/>
 
@@ -23,7 +23,7 @@ FILTER(?bdate < "1992-01-01"^^xsd:date)
 Order by ?birthplace
 Limit 10000
 
-#SPARQL: 
+#SPARQL: I search for municipalities of switzerland and I am interested what mayor party they have. It is also orderd to this.
 PREFIX dbo: <http://dbpedia.org/ontology/>
 PREFIX dbp: <http://dbpedia.org/property/>
 
